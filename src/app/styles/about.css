@@ -1,0 +1,35 @@
+.about {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .about-content {
+    max-width: 450px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    line-height: 1.5rem;
+  }
+  
+  .about-content p {
+    padding-top: 20px;
+  }
+
+  @media (max-width: 760px) {
+    .about {
+      padding: 40px 20px;
+      height: auto;
+    }
+  
+    .about-content {
+      width: 100%;
+      padding: 20px;
+    }
+}
