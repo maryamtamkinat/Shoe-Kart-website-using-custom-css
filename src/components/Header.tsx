@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import "../app/styles/header.css";
+import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,16 +20,24 @@ const Header = () => {
         {/* Desktop Links */}
         <ul className="navbar-links">
           <li className="navbar-link">
-            <a href="/">Home</a>
+          <Link href="/">
+              <a>Home</a>
+            </Link>
           </li>
           <li className="navbar-link">
-            <a href="/about">About</a>
+          <Link href="/about">
+              <a>About</a>
+            </Link>
           </li>
           <li className="navbar-link">
-            <a href="/shoes">Collections</a>
+          <Link href="/shoes">
+              <a>Collections</a>
+            </Link>
           </li>
           <li className="navbar-link">
-            <a href="/contact">Contact</a>
+          <Link href="/contact">
+              <a>Contact</a>
+            </Link>
           </li>
         </ul>
 
@@ -42,16 +51,24 @@ const Header = () => {
       {isMenuOpen && (
         <ul className={`navbar-menu ${isMenuOpen ? "open" : ""}`}>
           <li className="navbar-link">
-            <a href="/">Home</a>
+          <Link href="/">
+              <a>Home</a>
+            </Link>
           </li>
           <li className="navbar-link">
-            <a href="/about">About</a>
+          <Link href="/about">
+              <a>About</a>
+            </Link>
           </li>
           <li className="navbar-link">
-            <a href="/shoes">Collections</a>
+          <Link href="/shoes">
+              <a>Collections</a>
+            </Link>
           </li>
           <li className="navbar-link">
-            <a href="/contact">Contact</a>
+          <Link href="/contact">
+              <a>Contact</a>
+            </Link>
           </li>
         </ul>
       )}

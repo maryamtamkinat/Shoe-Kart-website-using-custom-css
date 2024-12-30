@@ -74,6 +74,7 @@ function Shoes() {
       <div className="shoes">
         {shoeData.map((shoe) => (
           <div key={shoe.id} className="shoe-card">
+           {/* eslint-disable @next/next/no-img-element  */}
             <img src={shoe.image} alt={shoe.name}/>
             <h3>{shoe.name}</h3>
             <p>{shoe.description}</p>

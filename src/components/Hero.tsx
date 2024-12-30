@@ -1,6 +1,3 @@
-"use client"
-
-import React, { useEffect } from "react";
 import "../app/styles/hero.css"
 
 const Hero = () => {
